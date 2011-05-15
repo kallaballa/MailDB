@@ -1,0 +1,20 @@
+jdbc.url = "jdbc:mysql://localhost/mail?characterEncoding=UTF-8"
+jdbc.driver = "com.mysql.jdbc.Driver"
+db.user = "root"
+db.pass = "pass"
+db.autocommit = "false"
+db.truncateOnConnect = "false"
+
+# MySQL code 1062: duplicate entry violate unique constraint
+# You need to replace it with the vendor specific code for your DB
+# unless you use MySQL 
+db.ignoreErrorCode = 1062     
+debug=false;
+
+mail.protocol = mbox
+mail.mbox.
+mail.mbox.mailhome = /var/mail/user
+
+#number of importer threads
+threads = 2
+

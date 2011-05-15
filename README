@@ -1,0 +1,3 @@
+MailDB reads a mailbox (mbox, pop3, imap) and stores emails semantically parsed in a jdbc database.
+It's primary purpose is to aid in searching and analyzing mailboxes and archives.
+
