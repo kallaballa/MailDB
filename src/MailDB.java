@@ -28,7 +28,7 @@ import java.util.Properties;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 import java.util.Vector;
-
+import javax.mail.internet.InternetAddress;
 public class MailDB {
 
   private final static String TO = "To";

@@ -25,9 +25,8 @@ import java.util.Date;
 import java.util.Properties;
 import java.util.Vector;
 import java.util.concurrent.Semaphore;
-
-import com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException;
-import com.sun.xml.internal.messaging.saaj.packaging.mime.internet.MimeMultipart;
+import javax.mail.*;
+import javax.mail.internet.*;
 
 public class MailImport {
   public static void main(String argv[]) {
