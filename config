@@ -11,9 +11,10 @@ db.truncateOnConnect = "false"
 db.ignoreErrorCode = 1062     
 debug=false;
 
-mail.protocol = mbox
-mail.mbox.
-mail.mbox.mailhome = /var/mail/user
+mail.provider = pop3
+mail.user = user
+mail.pass = pass
+mail.host = localhost
 
 #number of importer threads
 threads = 2

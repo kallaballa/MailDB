@@ -347,10 +347,15 @@ public class MailImport {
 
   public Store openMbox(Properties importProps) throws MessagingException {
 
-    Properties props = System.getProperties();
+    Properties props = new Properties();
+    String provider = importProps.getProperty("mail.provider");
+    String user = importProps.getProperty("mail.user");
+    String pass = importProps.getProperty("mail.pass");
+    String host = importProps.getProperty("mail.host");
+
     this.session = Session.getInstance(props, null);
-    Store store = this.session.getStore("mbox");
-    store.connect();
+    Store store = this.session.getStore(provider);
+    store.connect(host, user, pass);
     System.out.println("Store connected");
 
     return store;
