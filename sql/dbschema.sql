@@ -19,6 +19,8 @@
 -- Table structure for table `Envelope`
 --
 
+use mail; 
+
 DROP TABLE IF EXISTS `Envelope`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
